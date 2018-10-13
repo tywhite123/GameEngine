@@ -1,0 +1,3 @@
+Player,..\TestLevel\goomba2.png
+Floor,..\TestLevel\floor2.png
+Door,..\TestLevel\door.png
