@@ -9,14 +9,33 @@
 #include <FileIO\TextureReader.h>
 #include <FileIO\GameInfo.h>
 #include <Profiler\Profiling.h>
+#include <functional>
 
+template<typename T>
+auto processEvent(T event)
+{
+	return event();
+}
+
+
+void test()
+{
+	cout << "Hello World" << endl;
+}
 
 int main() {
 
+	std::function<int()> hello = []() {return 2 + 3; };
+	processEvent(hello);
+	cout << "Hello" << endl;
+	processEvent(test);
+
+	std::function<void()> t = test;
 	
 
+
 	//Create a window
-	Window w("CSC3224 - Game Engine", 1920, 1080);
+	Window w("Game Engine v2 Development", 1920, 1080);
 
 	
 

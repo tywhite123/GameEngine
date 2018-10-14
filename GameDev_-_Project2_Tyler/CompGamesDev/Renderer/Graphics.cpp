@@ -88,7 +88,7 @@ void Graphics::GraphicsUpdate(float msec)
 
 	this->msec = msec;
 	//Update
-	RecieveEvent();
+	/*RecieveEvent();*/
 	UpdateEnemy();
 	CheckEnemiesLeft();
 	r.UpdateScene(msec);

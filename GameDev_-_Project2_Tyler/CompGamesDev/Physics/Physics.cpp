@@ -64,7 +64,7 @@ Physics::~Physics()
 
 void Physics::PhysicsUpdate(float msec)
 {
-	RecieveEvent();
+	/*RecieveEvent();*/
 	//world.Step(timeStep, velocityIterations, positionIterations);
 	for (auto ob : *objList) {
 		if (ob->getType() == ObjectType::Enemy && ob->getHP() > 0) {
